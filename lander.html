@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SolarBright | Solar Plants for Home & Farming</title>
+  <meta name="description" content="Harness the sun's energy with specialized solar solutions for residential and agricultural needs from SolarBright." />
+  <link rel="icon" href="assets" type="image/svg+xml" />
+<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/popup.css">
+
+  <style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: url("assets/img/bg-desktop.png") no-repeat center center;
+    background-size: cover;
+  }
+ 
+  /* Mobile (max 600px) */
+  @media (max-width: 600px) {
+    body {
+      background-image: url("assets/img/mob.png");
+    }
+  }
+ 
+  /* Tablet (601px – 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      background-image: url("assets/img/tab.png");
+    }
+  }
+ 
+  /* Desktop (above 1024px) */
+  @media (min-width: 1025px) {
+    body {
+      background-image: url("assets/img/lap.png");
+    }
+  }
+</style>
+ 
+</head>
+<body>
+  <!-- ===== Nav ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="SolarBright Logo"><span>SolarBright</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu">
+        <span class="bar" aria-hidden="true"></span> Menu
+      </button>
+      <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="custom.html">Custom Solutions</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="right">
+        <a class="btn ghost" href="contact.html">Request Quote</a>
+        <a class="btn" href="products.html">Explore Products</a>
+      </div>
+    </div>
+  </header>
+ 
+<script src="assets/js/script.js"></script>
+<script src="assets/js/popup.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    PopupLander(); // only for lander.html
+  });
+</script>
+</body>
+</html>

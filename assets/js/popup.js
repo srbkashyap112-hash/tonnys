@@ -29,24 +29,6 @@ function close() {
     return { bd, close };
   }
 
-  // Call this on index.html
-  window.PopupIndex = function () {
-    // (optional) show once per session on index
-    if (sessionStorage.getItem("ageGateShown_index") === "1") return;
-    sessionStorage.setItem("ageGateShown_index", "1");
-
-    const built = buildPopup();
-    if (!built) return;
-    const { bd, close } = built;
-
-    // Both buttons now redirect to Google
-    bd.querySelector("#age-yes").addEventListener("click", () => {
-      window.location.href = REDIRECT;
-    });
-    bd.querySelector("#age-no").addEventListener("click", () => {
-      window.location.href = REDIRECT;
-    });
-  };
 
   // Call this on lander.html
   window.PopupLander = function () {
